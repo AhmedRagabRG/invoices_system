@@ -21,7 +21,7 @@
     @include('components.head')
 </head>
 
-<body class="app sidebar-mini ltr light-mode">
+<body class="app sidebar-mini @if(App::getLocale() == "ar") rtl @else ltr @endif  light-mode">
 
 @include('components.navbar')
 
