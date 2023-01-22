@@ -3,7 +3,7 @@
 [Master Stylesheet]
 
 Project        :   sash – Bootstrap 5  Admin & Dashboard Template
-Copyright      :   Spruko Technologies Private Limited 
+Copyright      :   Spruko Technologies Private Limited
 Author         :   Spruko
 Author URL     :   https://themeforest.net/user/spruko
 Support	       :   support@spruko.com
@@ -146,7 +146,7 @@ License        :   Licensed under ThemeForest License
 /* ######## FONT ######## */
 /*-------- Bootstrap Framework -------*/
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
 /* ######## BOOTSTRAP ######## */
 /*Color variables*/
 /*Gradient variables*/
@@ -236,7 +236,7 @@ section {
 
 body {
     margin: 0;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -7039,6 +7039,13 @@ form.convFormDynamic button.submit:hover {
 
 .invalid-feedback {
     display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 87.5%;
+    color: #e23e3d;
+}
+
+.c-invalid-feedback {
     width: 100%;
     margin-top: 0.25rem;
     font-size: 87.5%;
