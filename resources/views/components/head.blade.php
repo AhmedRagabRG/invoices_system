@@ -8,7 +8,7 @@
 <link href="{{asset('assets/css/skin-modes.css')}}" rel="stylesheet" />
 
 <!--- FONT-ICONS CSS -->
-<link href="{{asset('assets/css/icons.csss')}}" rel="stylesheet" />
+<link href="{{asset('assets/css/icons.css')}}" rel="stylesheet" />
 
 <!-- COLOR SKIN CSS -->
 <link id="theme" rel="stylesheet" type="text/css" media="all" href="{{asset('assets/colors/color1.css')}}" />
