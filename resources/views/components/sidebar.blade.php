@@ -21,28 +21,23 @@
                 </svg></div>
             <ul class="side-menu">
                 <li class="slide">
-                    <a class="side-menu__item has-link" data-bs-toggle="slide" href="index.html"><i
-                            class="side-menu__icon fe fe-home"></i><span
-                            class="side-menu__label">{{__('main.dashboard')}}</span></a>
+                    <a class="side-menu__item has-link" data-bs-toggle="slide" href="index.html">
+                        <i class="side-menu__icon fe fe-home"></i>
+                        <span class="side-menu__label">{{__('main.dashboard')}}</span>
+                    </a>
                 </li>
                 <li class="sub-category">
                     <h3>General</h3>
                 </li>
                 <li class="slide">
-                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                            class="side-menu__icon fe fe-map-pin"></i><span
-                            class="side-menu__label">Maps</span><i
-                            class="angle fe fe-chevron-right"></i></a>
-                    <ul class="slide-menu">
-                        <li class="side-menu-label1"><a href="javascript:void(0)">Maps</a></li>
-                        <li><a href="maps1.html" class="slide-item">Leaflet Maps</a></li>
-                        <li><a href="maps2.html" class="slide-item">Mapel Maps</a></li>
-                        <li><a href="maps.html" class="slide-item">Vector Maps</a></li>
-                    </ul>
+                    <a class="side-menu__item has-link" data-bs-toggle="slide" href="{{url('academic')}}">
+                        <i class="side-menu__icon fa fa-university"></i>
+                        <span class="side-menu__label">{{__('academic.Academics')}}</span>
+                    </a>
                 </li>
             </ul>
             <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
-                                                           width="24" height="24" viewBox="0 0 24 24">
+                           width="24" height="24" viewBox="0 0 24 24">
                     <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
                 </svg></div>
         </div>

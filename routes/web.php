@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AcademicController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -20,6 +21,10 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 {
     Route::get('/', [AdminController::class, 'index'])->middleware('auth')->name('dashboard');
+
+    Route::get('academic', [AcademicController::class, 'index'])->middleware('auth')->name('dashboard');
+
+    Route::get('academic/create', [AcademicController::class, 'create'])->middleware('auth')->name('dashboard');
 
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

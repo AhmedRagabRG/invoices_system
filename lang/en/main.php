@@ -10,7 +10,8 @@ return [
     'inbox' => "Inbox",
     'signout' => "Sign out",
 
-
-
+    'next' => "Next",
+    'previous' => "Previous",
+    'add' => "Add",
 
 ];

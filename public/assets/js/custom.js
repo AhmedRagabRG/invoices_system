@@ -125,7 +125,7 @@
         return new bootstrap.Popover(popoverTriggerEl)
     })
 
-    // BY DEFAULT, BOOTSTRAP DOESN'T AUTO CLOSE POPOVER AFTER APPEARING IN THE PAGE 
+    // BY DEFAULT, BOOTSTRAP DOESN'T AUTO CLOSE POPOVER AFTER APPEARING IN THE PAGE
     $(document).on('click', function (e) {
         $('[data-toggle="popover"],[data-original-title]').each(function () {
             //the 'is' for buttons that trigger popups
@@ -292,7 +292,7 @@
             carouselData.options.rtl = true;
             $(element).trigger('refresh.owl.carousel');
         });
-    } 
+    }
 
 
 	/******* Header Styles ********/
@@ -305,7 +305,7 @@
 
 	/******* Menu Styles ********/
 
-	// $('body').addClass('light-menu');	
+	// $('body').addClass('light-menu');
 	// $('body').addClass('color-menu');
 	// $('body').addClass('dark-menu');
 	// $('body').addClass('gradient-menu');
@@ -313,8 +313,8 @@
 
 	/******* Full Width Layout Start ********/
 
-	// $('body').addClass('layout-boxed'); 
-	
+	// $('body').addClass('layout-boxed');
+
 
 	/******** *Header-Position Styles Start* ********/
 
@@ -374,8 +374,8 @@
         // $('#slide-left').addClass('d-none');
         // $('#slide-right').addClass('d-none');
         // document.querySelector('.horizontal .side-menu').style.flexWrap = 'wrap'
-        
-    } 
+
+    }
 
 	// ***** Horizontal Hover Menu ***** //
 
@@ -520,4 +520,11 @@ replay()
 $('.off-canvas').on('click', function () {
     $('body').addClass('overflow-y-scroll');
     $('body').addClass('pe-0');
+});
+
+function onFinish(){ alert('Finish Csadalicked'); }
+function onCancel(){ $('#smartwizard').smartWizard("reset"); }
+
+$('#smartwizard').smartWizard({
+    selected: 3,
 });

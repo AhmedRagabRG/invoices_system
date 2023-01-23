@@ -8,7 +8,7 @@
 
 
     ///Create a negative margin to prevent content 'jumps':
-    stickyElement.after('<div class="jumps-prevent"></div>');
+    // stickyElement.after('<div class="jumps-prevent"></div>');
 
     function jumpsPrevent() {
         stickyHeight = stickyElement.innerHeight();
@@ -35,7 +35,7 @@
     $(window).on('scroll',function() {
         stickerFn();
     });
-    
+
     $('.app-sidebar').on('scroll', function() {
         let s = $(".app-sidebar .ps__rail-y");
         if (s[0].style.top.split('px')[0] <= 60 ) {
