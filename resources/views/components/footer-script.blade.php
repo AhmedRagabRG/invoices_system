@@ -5,6 +5,9 @@
 <script src="{{asset('assets/plugins/bootstrap/js/popper.min.js')}}"></script>
 <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
 
+<!-- INPUT MASK JS-->
+<script src="{{asset('assets/plugins/input-mask/jquery.mask.min.js')}}"></script>
+
 <!-- SPARKLINE JS-->
 <script src="{{asset('assets/js/jquery.sparkline.min.js')}}"></script>
 
@@ -24,6 +27,10 @@
 <!-- FORM WIZARD JS-->
 <script src="{{asset('assets/plugins/formwizard/jquery.smartWizard.js')}}"></script>
 <script src="{{asset('assets/plugins/formwizard/fromwizard.js')}}"></script>
+
+<!-- SWEET-ALERT JS -->
+<script src="{{asset('assets/plugins/sweet-alert/sweetalert.min.js')}}"></script>
+<script src="{{asset('assets/js/sweet-alert.js') }}"></script>
 
 <!-- INTERNAL Accordion-Wizard-Form js-->
 <script src="{{asset('assets/plugins/accordion-Wizard-Form/jquery.accordion-wizard.min.js')}}"></script>
@@ -50,9 +57,38 @@
 <script src="{{asset('assets/plugins/datatable/js/dataTables.bootstrap5.js')}}"></script>
 <script src="{{asset('assets/plugins/datatable/dataTables.responsive.min.js')}}"></script>
 
+<!-- Date Range Filter Data Table -->
+<script src="{{asset('assets/plugins/extension-datatable/date-time/moment.js')}}"></script>
+<script src="{{asset('assets/plugins/extension-datatable/date-time/dataTables.dateTime.min.js')}}"></script>
+<script src="{{asset('assets/js/datetime-table.js')}}"></script>
+<!-- DATA TABLE JS -->
+<script src="{{asset('assets/plugins/datatable/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/dataTables.bootstrap5.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/dataTables.buttons.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/buttons.bootstrap5.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/jszip.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/pdfmake/pdfmake.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/pdfmake/vfs_fonts.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/buttons.html5.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/buttons.print.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/buttons.colVis.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/responsive.bootstrap5.min.js')}}"></script>
+<script src="{{asset('assets/js/table-data.js')}}"></script>
+
 <!-- INTERNAL APEXCHART JS -->
 <script src="{{asset('assets/js/apexcharts.js')}}"></script>
 <script src="{{asset('assets/plugins/apexchart/irregular-data-series.js')}}"></script>
+
+<!-- INTERNAL Autofill-Table JS -->
+<script src="{{asset('assets/plugins/datatable/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/dataTables.bootstrap5.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/dataTables.buttons.min.js')}}"></script>
+<script src="{{asset('assets/plugins/datatable/js/buttons.bootstrap5.min.js')}}"></script>
+<script src="{{asset('assets/plugins/extension-datatable/autofill/dataTables.autoFill.min.js')}}"></script>
+<script src="{{asset('assets/plugins/extension-datatable/autofill/autoFill.bootstrap5.min.js')}}"></script>
+<script src="{{asset('assets/plugins/extension-datatable/keytable/dataTables.keyTable.min.js')}}"></script>
+<script src="{{asset('assets/js/autofill-table.js')}}"></script>
 
 <!-- INTERNAL Flot JS -->
 <script src="{{asset('assets/plugins/flot/jquery.flot.js')}}"></script>
@@ -66,6 +102,10 @@
 
 <!-- SIDE-MENU JS-->
 <script src="{{asset('assets/plugins/sidemenu/sidemenu.js')}}"></script>
+
+<!-- INTERNAL Edit-Table JS -->
+<script src="{{asset('assets/plugins/edit-table/bst-edittable.js')}}"></script>
+<script src="{{asset('assets/plugins/edit-table/edit-table.js')}}"></script>
 
 <!-- TypeHead js -->
 <script src="{{asset('assets/plugins/bootstrap5-typehead/autocomplete.js')}}"></script>
@@ -90,3 +130,5 @@
 
 <!-- CUSTOM JS -->
 <script src="{{asset('assets/js/custom.js')}}"></script>
+
+@yield('js')

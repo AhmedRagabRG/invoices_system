@@ -23,6 +23,11 @@
 
 <body class="app sidebar-mini @if(App::getLocale() == "ar") rtl @else ltr @endif  light-mode">
 
+<!-- GLOBAL-LOADER -->
+<div id="global-loader">
+    <img src="{{ asset('assets/images/loader.svg') }}" class="loader-img" alt="Loader">
+</div>
+
 @include('components.navbar')
 
 <!-- GLOBAL-LOADER -->
@@ -45,7 +50,46 @@
 
 </div>
 
-    @include('components.footer-script')
+@include('components.footer-script')
+
+<script type="text/javascript">
+
+    $.extend(true, $.fn.dataTable.defaults, {
+        bFilter: !1,
+        bInfo: !1,
+        bLengthChange: !1,
+        oLanguage: {
+            oPaginate: {
+                sFirst: "First",
+                sLast: "Last",
+                sNext: "{{__('main.next')}}",
+                sPrevious: "{{__('main.previous')}}",
+            },
+            sInfo: "{{__('main.sInfo')}}",
+            sEmptyTable: "{{__('main.sEmptyTable')}}",
+            sLengthMenu: "{{__('main.sLengthMenu')}}",
+            sSearch: "{{__('main.search')}}",
+            sZeroRecords: "{{__('main.sZeroRecords')}}",
+        },
+    });
+
+    $(document).ready(function(){
+        $(document).on("click", "#deleteBtn", function(e) {
+            $('body').removeClass('timer-alert');
+            swal({
+                    title: "{{ __('message.delete') }}",
+                    type: "error",
+                    showCancelButton: true,
+                    confirmButtonText: '{{ __('main.delete') }}',
+                    cancelButtonText: '{{ __('main.cancel') }}',
+                },
+                function(isConfirm) {
+                    if (isConfirm) {
+                    }
+                });
+        });
+    });
+</script>
 </body>
 
 </html>

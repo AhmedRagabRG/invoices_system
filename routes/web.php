@@ -18,19 +18,23 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 
 
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-{
-    Route::get('/', [AdminController::class, 'index'])->middleware('auth')->name('dashboard');
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ], function () {
 
-    Route::get('academic', [AcademicController::class, 'index'])->middleware('auth')->name('dashboard');
+    Route::get('/', [AdminController::class, 'index'])->name('dashboard');
 
-    Route::get('academic/create', [AcademicController::class, 'create'])->middleware('auth')->name('dashboard');
+    Route::get('academic', [AcademicController::class, 'index'])->name('academics');
 
-    Route::middleware('auth')->group(function () {
-        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    });
+    Route::view('academic/create','livewire.show-form');
+//    Route::get('academic/create', [AcademicController::class, 'create'])->name('academicCreate');
+    Route::post('academic/store', [AcademicController::class, 'store'])->name('academicStore');
 
-    require __DIR__.'/auth.php';
+    Route::post('academic/edit/{id}', [AcademicController::class, 'edit'])->name('academicEdit');
+    Route::patch('academic/update/{id}', [AcademicController::class, 'update'])->name('academicUpdate');
+
+    Route::delete('academic/delete/{id}', [AcademicController::class, 'destroy']);
+
 });
