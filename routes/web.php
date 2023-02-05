@@ -28,7 +28,7 @@ Route::group(
 
     Route::get('academic', [AcademicController::class, 'index'])->name('academics');
 
-    Route::view('academic/create','livewire.show-form')->name();
+    Route::view('academic/create','livewire.show-form');
 //    Route::get('academic/create', [AcademicController::class, 'create'])->name('academicCreate');
     Route::post('academic/store', [AcademicController::class, 'store'])->name('academicStore');
 
