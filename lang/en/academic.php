@@ -12,6 +12,7 @@ return [
     'Academic_notes' => 'Notes',
     'Academic_years' => 'College years',
     'Academic_created_at' => 'Created At',
+    'Academic_grade' => 'Acceptance score',
 
     'Academic_name' => 'Collage Name',
     'Academic_ar_name' => 'College name in Arabic',

@@ -12,6 +12,7 @@ return [
     'Academic_notes' => 'الملاحظات',
     'Academic_years' => 'سنين الكلية',
     'Academic_created_at' => 'تاريخ الإنشاء',
+    'Academic_grade' => 'درجة القبول',
 
     'Academic_name' => 'اسم الكلية',
     'Academic_ar_name' => 'اسم الكلية باالعربي',

@@ -22,6 +22,7 @@
 
     @include('livewire.academic-data')
     @include('livewire.academic-requirements')
+    @include('livewire.academic-finish')
 
     <div class="btn-group me-2 sw-btn-group" role="group">
         <button wire:click='prevStep' class="btn btn-danger sw-btn-prev @if($currentStep == 1) disabled @endif" type="button">Previous</button>

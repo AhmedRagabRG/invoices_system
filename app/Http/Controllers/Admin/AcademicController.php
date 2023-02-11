@@ -85,9 +85,7 @@ class AcademicController extends Controller
 
     public function destroy(Request $request)
     {
-        $academic = Academic::findOrfail($request->id)->delete();
-        toastr()->error(trans('تم الحذف'));
-        return redirect()->route('academics');
+        dd($request);
     }
 
 }

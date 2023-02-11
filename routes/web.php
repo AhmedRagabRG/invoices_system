@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Admin\AcademicController;
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -35,6 +34,6 @@ Route::group(
     Route::post('academic/edit/{id}', [AcademicController::class, 'edit'])->name('academicEdit');
     Route::patch('academic/update/{id}', [AcademicController::class, 'update'])->name('academicUpdate');
 
-    Route::delete('academic/delete/{id}', [AcademicController::class, 'destroy']);
+    Route::post('academic/delete', [AcademicController::class, 'destroy']);
 
 });
